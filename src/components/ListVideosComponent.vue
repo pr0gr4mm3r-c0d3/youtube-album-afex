@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { onMounted } from 'vue';
 import { AtomSpinner } from 'epic-spinners';
 import {
 	CardItemVideoComponent,
@@ -6,9 +7,11 @@ import {
 	DeleteModalContentComponent,
 	DetailModalContentComponent,
 } from '@/components';
+import { VideoCtrl } from '@/controllers';
 import { useUIStore, useVideoStore } from '@/stores';
 const { uiState } = useUIStore();
 const { videosState } = useVideoStore();
+onMounted(VideoCtrl.getAllVideos);
 </script>
 <template>
 	<div class="list__container">
