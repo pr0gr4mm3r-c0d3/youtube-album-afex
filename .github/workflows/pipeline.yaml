@@ -3,7 +3,7 @@ on:
     push:
         branches: [develop]
 jobs:
-    build:
+    build_merge_branches:
         runs-on: 'ubuntu-latest'
         steps:
             - name: Checkout
@@ -17,7 +17,7 @@ jobs:
             - name: Run Test
               run: npm run test
             - name: Run Build
-              run: npm build
+              run: npm run build
 
             - uses: actions/checkout@master
             - name: Merge develop -> main
