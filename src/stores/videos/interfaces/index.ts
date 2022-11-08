@@ -19,7 +19,7 @@ export interface VideoStoreGetters extends _GettersTree<VideoState> {
 
 export interface VideoStoreActions extends _ActionsTree {
 	setVideos: (this: VideoState, payload: VideoDTO[]) => void;
-	setIdVideoToDelete(this: VideoState, payload: string): void;
+	setIdVideoToDelete(this: VideoState, payload: string | null): void;
 	setVideoSelected(this: VideoState, payload: VideoDTO | null): void;
 	addVideo: (this: VideoState, payload: VideoDTO) => void;
 	deleteVideo: (this: VideoState, payload: string) => void;

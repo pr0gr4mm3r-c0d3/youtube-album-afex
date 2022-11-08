@@ -14,6 +14,7 @@ const { url, inputRef, handlerAddVideo } = useAddVideo();
 				placeholder="Añadir"
 				autocomplete="off"
 				autofocus
+				data-testId="input-testId"
 			/>
 			<button type="submit" class="add__btn">Añadir</button>
 		</form>
