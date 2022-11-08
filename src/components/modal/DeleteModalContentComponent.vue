@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { useDeleteVideo, useModal } from '@/composables';
-const { handlerClickDeleteVideo } = useDeleteVideo();
-const { handlerCloseModal } = useModal();
+import { useDeleteVideo} from '@/composables';
+const { handlerClickDeleteVideo, handlerCloseModal } = useDeleteVideo();
 </script>
 <template>
 	<section class="modal__content">

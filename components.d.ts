@@ -7,6 +7,11 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    AddVideoComponent: typeof import('./src/components/AddVideoComponent.vue')['default']
+    CardItemVideoComponent: typeof import('./src/components/CardItemVideoComponent.vue')['default']
+    DeleteModalContentComponent: typeof import('./src/components/modal/DeleteModalContentComponent.vue')['default']
+    DetailModalContentComponent: typeof import('./src/components/modal/DetailModalContentComponent.vue')['default']
+    ListVideosComponent: typeof import('./src/components/ListVideosComponent.vue')['default']
+    WrapperModalComponent: typeof import('./src/components/modal/WrapperModalComponent.vue')['default']
   }
 }

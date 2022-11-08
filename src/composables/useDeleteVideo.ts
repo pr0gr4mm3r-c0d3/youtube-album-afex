@@ -1,9 +1,11 @@
 import { useUIStore } from '@/stores';
+import { VideoCtrl } from '@/controllers';
+import { useModal } from './useModal';
 export const useDeleteVideo = () => {
-	const uiStore = useUIStore();
+	const { handlerCloseModal } = useModal();
 	const handlerClickDeleteVideo = async () => {
-		// TODO: VideoCtrl execute deleteVideo()
-		uiStore.setModal(false);
+		await VideoCtrl.delVideo();
+		handlerCloseModal();
 	};
-	return { setModal: uiStore.setModal, handlerClickDeleteVideo };
+	return { handlerCloseModal, handlerClickDeleteVideo };
 };

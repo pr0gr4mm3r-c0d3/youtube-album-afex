@@ -21,6 +21,14 @@ export default class VideoCtrl {
 		handlerSuccess('Se ha añadido un nuevo video');
 	}
 	static async delVideo() {
-		console.log('Delete Video CTRL');
+		const { getIdVideoToDelete } = useVideoStore();
+		if (!getIdVideoToDelete)
+			throw new Error(
+				'Asegure que este seleccionando un video para eliminar'
+			);
+		await fireStoreService.deleteVideo(getIdVideoToDelete);
+		const videoStore = useVideoStore();
+		videoStore.deleteVideo(getIdVideoToDelete);
+		handlerSuccess('El video ha sido borrado');
 	}
 }
