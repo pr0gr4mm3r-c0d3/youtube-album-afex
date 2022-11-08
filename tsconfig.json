@@ -15,10 +15,21 @@
 		// "types": ["node"],
 		"baseUrl": "./",
 		"paths": {
-			"@/*": ["./src/*", "./dist/*"]
+			"@/*": ["./src/*", "./dist/*"],
+			"@test/*": ["./test/*"]
 		}
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"test/**/*.ts",
+		"test/**/*.d.ts",
+		"test/**/*.tsx",
+		"test/**/*.vue",
+		"test/**/*.spec.ts"
+	],
 	"exclude": ["node_modules"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
