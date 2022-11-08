@@ -3,6 +3,7 @@ export const useModal = () => {
 	const [uiStore, videoStore] = [useUIStore(), useVideoStore()];
 	const handlerCloseModal = () => {
 		videoStore.setVideoSelected(null);
+		videoStore.setIdVideoToDelete(null);
 		uiStore.setModal(false);
 	};
 	const handlerShowModal = () => {

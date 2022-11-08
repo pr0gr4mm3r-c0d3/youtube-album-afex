@@ -17,6 +17,7 @@ const { video } = defineProps<IProps>();
 			class="card__delete"
 			src="../assets/svg/card_close.svg"
 			alt="Delete Icon"
+			data-testId="deleteVideoIcon"
 			@click="() => handlerClickOnDeleteVideo(video.id)"
 		/>
 		<img

@@ -4,7 +4,7 @@ const actions: VideoStoreActions = {
 	setVideos(this: VideoState, payload: VideoDTO[]) {
 		this.videosState.videos = [...payload];
 	},
-	setIdVideoToDelete(this: VideoState, payload: string) {
+	setIdVideoToDelete(this: VideoState, payload: string | null) {
 		this.videosState.idVideoToDelete = payload;
 	},
 	setVideoSelected(this: VideoState, payload: VideoDTO | null) {

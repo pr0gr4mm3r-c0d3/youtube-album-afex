@@ -7,7 +7,12 @@ const { handlerCloseModal } = useModal();
 	<div class="modal__wrapper">
 		<section class="modal__container">
 			<header class="modal__header">
-				<span class="modal__close" @click="handlerCloseModal">X</span>
+				<span
+					data-testId="closeBtn"
+					class="modal__close"
+					@click="handlerCloseModal"
+					>X</span
+				>
 			</header>
 
 			<section class="modal__body">
