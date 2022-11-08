@@ -1,0 +1,30 @@
+name: CI && Merge branches Develop to Main
+on:
+    push:
+        branches: [develop]
+jobs:
+    build:
+        runs-on: 'ubuntu-latest'
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Install Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+            - name: Install Dependencies
+              run: npm i
+            - name: Run Test
+              run: npm run test
+            - name: Run Build
+              run: npm run build
+
+            - name: Run Merge Branches develop to main
+            - uses: actions/checkout@master
+            - name: Merge develop -> main
+              uses: devmasx/merge-branch@master
+              with:
+                  type: now
+                  from_branch: develop
+                  target_branch: main
+                  github_token: ${{ github.token }}
