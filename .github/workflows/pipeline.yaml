@@ -17,7 +17,7 @@ jobs:
             - name: Run Test
               run: npm run test
             - name: Run Build
-              run: npm run build
+              run: npm build
 
             - uses: actions/checkout@master
             - name: Merge develop -> main
