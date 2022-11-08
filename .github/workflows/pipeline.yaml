@@ -3,7 +3,7 @@ on:
     push:
         branches: [develop]
 jobs:
-    build:
+    build_merge_branches:
         runs-on: 'ubuntu-latest'
         steps:
             - name: Checkout
