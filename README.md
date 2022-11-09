@@ -63,4 +63,4 @@
 
 #### Notificación de acción eliminar
 
-[![image](src/assets/img/notify.png)
+![image](src/assets/img/notify.png)
