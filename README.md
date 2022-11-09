@@ -1,18 +1,66 @@
 [![CI && Merge branches Develop to Main](https://github.com/pr0gr4mm3r-c0d3/youtube-album-afex/actions/workflows/pipeline.yaml/badge.svg)](https://github.com/pr0gr4mm3r-c0d3/youtube-album-afex/actions/workflows/pipeline.yaml)
 
-# Vue 3 + TypeScript + Vite
+# YouTube Album AFEX
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> Solución al test de Frontend enviado por la empresa AFEX en respuesta de mi solicitud al puesto para Frontend Developer Vue 3
 
-## Recommended IDE Setup
+## ENLACES
 
--   [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+### Repositorio
 
-## Type Support For `.vue` Imports in TS
+> **_Github_**: https://github.com/pr0gr4mm3r-c0d3/youtube-album-afex
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+### Sitio Web
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+> **_Netlify_**: https://youtubealbum.netlify.app/
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+## SETUP PRINCIPAL
+
+-   Vite
+-   Vitest
+-   Vue 3
+-   Typescript
+-   Pinia
+-   Sass
+-   Testing Library
+
+## OTRAS HERRAMIENTAS USADAS
+
+### APIS
+
+-   YouTube
+-   Firebase
+
+### CONTROLADOR DE VERSIONES
+
+-   Git / Github
+
+### CI/CD
+
+-   Github Actions
+
+### HOSTING
+
+-   Netlify
+
+## CAPTURAS DE PANTALLAS
+
+#### Cargando datos de firebase
+
+![image](src/assets/img/loading.png)
+
+#### Vista principal
+
+![image](src/assets/img/home.png)
+
+#### Modal Eliminar
+
+![image](src/assets/img/delete_modal.png)
+
+#### Modal Detalles de Video
+
+![image](src/assets/img/detail_modal.png)
+
+#### Notificación de acción eliminar
+
+![image](src/assets/img/notify.png)
